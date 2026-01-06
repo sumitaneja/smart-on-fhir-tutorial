@@ -17020,7 +17020,7 @@ function completeCodeFlow(params){
 
   Adapter.get().http({
     method: 'POST',
-    url: state.provider.oauth2.token_uri,
+    url: 'https://authorization.cerner.com/tenants/ec2458f2-1e24-41c8-b71b-0e701af7583d/hosts/random/protocols/oauth2/profiles/smart-v1/token',
     data: data,
     headers: headers
   }).then(function(authz){
